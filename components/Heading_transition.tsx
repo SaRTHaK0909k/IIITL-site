@@ -11,7 +11,7 @@ function Head() {
 
   return (
       <div
-      className=" m-4 text-4xl font-medium transition text-right opacity-60 text-gray-500 leading-snug justify-center items-center"
+      className=" m-4 text-5xl font-medium transition text-right opacity-60 text-gray-500 leading-snug justify-center items-center"
       style={{
         opacity: 1,
         animation: 'fadeIn 3s ease-in-out',
@@ -21,6 +21,8 @@ function Head() {
       Indian Insitute of Information Technology, Lucknow
       <br />
       भारतीय   सूचना   प्रौद्योगिकी   संस्थान, लखनऊ
+      <br />
+      <span className=" float-right animate__zoomOutRight text-lg text-gray-500 ">(An Institute of National Importance by the Act of Parliament)</span>
     </div>
 
   );

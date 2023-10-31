@@ -57,21 +57,7 @@ const Navbarr = () => {
   }, [router.pathname]);
 
   return (
-    <div>
-      <div className="py-10 px-96 flex justify-between items-center">
-        <div>
-          <Link href="/">
-            <Image
-              src='/iiitlLogo.png'
-              alt="IIITL"
-              width={400}
-              height={10}
-              style={{width:'200px'}}
-            />
-          </Link>
-        </div>
-        <Heading />
-      </div>
+    <div className="sticky top-0 z-10">
       <Navbar expand="lg" className="px-2 py-4 bg-[#e6e6e6] text-bluel text-xl font-semibold  text-center">
         <Container >
           <Navbar.Toggle aria-controls="navbarScroll" />
@@ -178,7 +164,6 @@ const Navbarr = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    
     </div>
   );
 };

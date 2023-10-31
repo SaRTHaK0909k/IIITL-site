@@ -4,6 +4,7 @@ import Footer from '../Footer'
 import localFont from 'next/font/local'
 import Zoom from 'react-reveal/Zoom';
 import Marque from '../Marque';
+import Heading from '../Heading';
 
 const myFont = localFont({ src: '../../public/Mukta-Medium.ttf' })
 const index = ({ children }) => {
@@ -37,11 +38,12 @@ const index = ({ children }) => {
         </div>
         </Zoom>
         <Marque/>
+        <Heading/>
         <Navbarr />
         <div className=''>
           {children}
         </div>
-        <Footer />
+        <Footer/>
       </div>
     </div>
   )

@@ -27,8 +27,8 @@ const admissions = ({ admissions,course }) => {
                 {
                     admissions.map((item, index) => {
                         return (
-                            <div className='p-4 shadow-lg mb-4'>
-                                <h1 className='text-5xl text-cyan-800 font-semibold mb-4 border-b-2 border-cyan-800'>{item.title}</h1>
+                            <div className='p-4  mb-4'>
+                                <h1 className='text-5xl text-cyan-800 font-semibold mb-4 border-b-2 text-center border-cyan-800'>{item.title}</h1>
                                 <PortableText
                                     content={item.content}
                                     serializers={{

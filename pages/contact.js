@@ -1,10 +1,10 @@
-import Navbar from '@/components/Navbar';
+import Layout from "../components/Layout";  
 import React from 'react';
 
 const Contact = () => {
     return (
         <div>
-            <Navbar />
+            <Layout>
             <div className="bg-gray-100 py-8">
                 <div className="text-center">
                     <h1 className="text-4xl sm:text-5xl font-bold text-gray-900">Contact Us</h1>
@@ -71,6 +71,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+            </Layout>
         </div>
     );
 };

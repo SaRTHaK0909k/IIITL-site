@@ -1,4 +1,4 @@
-import Navbar from '@/components/Navbar'
+import Layout from "../components/Layout";  
 import React from 'react'
 import { createClient } from "next-sanity";
 import imageUrlBuilder from "@sanity/image-url";
@@ -19,7 +19,7 @@ const news = ({news,annoucements}) => {
  
   return (
     <div>
-      <Navbar/>
+      <Layout>
       <div className="flex flex-col font-serif lg:text-5xl text-bluel md:text-5xl px-10 py-3 sm:text-4xl max-sm:text-2xl border-b-2">
               <div className="font-bold border-b-4 border-bluel">IIITL in the News</div>
       </div>
@@ -54,7 +54,7 @@ const news = ({news,annoucements}) => {
               <div className="font-bold border-b-4 border-bluel">Public Annoucements</div>
       </div>
        
-
+      </Layout>
     </div>
   )
 }

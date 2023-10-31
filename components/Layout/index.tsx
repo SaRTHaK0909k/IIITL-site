@@ -10,7 +10,7 @@ const index = ({ children }) => {
   return (
     <div className={myFont.className}>
       <div className='bg-[#f5f5f5] max-w-[2200px] m-auto'>
-      <Marque/>
+      
          
          <Zoom>
         <div className='flex fixed flex-col top-[400px] z-50'>
@@ -36,6 +36,7 @@ const index = ({ children }) => {
           </div>
         </div>
         </Zoom>
+        <Marque/>
         <Navbarr />
         <div className=''>
           {children}

@@ -1,4 +1,4 @@
-import Navbar from '@/components/Navbar'
+import Layout from '../../components/Layout'
 import React from 'react'
 import { createClient } from "next-sanity";
 import imageUrlBuilder from "@sanity/image-url";
@@ -22,7 +22,7 @@ const course = ({admissions,course}) => {
 
   return (
     <div>
-      <Navbar/>
+      <Layout>
       <div className='p-20'>
       {
           course.map((item,ind)=>{
@@ -41,7 +41,7 @@ const course = ({admissions,course}) => {
             })
         }
      </div>
-       
+       </Layout>
 
     </div>
   )
